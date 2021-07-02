@@ -1,0 +1,21 @@
+.navul{
+    background-color:var(--secondary);
+    display:flex;
+    justify-content: center;
+}
+.navul > li {
+    line-height:45px;
+}
+.navul > li> a {
+    padding:10px 20px;
+    border-right:1px solid var(--border);
+}
+.navul > li:last-child > a{
+    border:none;
+}
+.navul > li:hover{
+    background-color: var(--border);
+}
+.nav > li:hover > a {
+    color:var(--dark);
+}
