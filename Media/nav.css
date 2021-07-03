@@ -1,0 +1,77 @@
+nav{
+    padding-top:20px;
+}
+.navul{
+    display:flex;
+    background-color: var(--primary);
+    height:60px;
+}
+.navul > li{
+    line-height:60px;
+}
+.navul > li > a{
+    padding:0 20px;
+    color:var(--text-white);
+}
+.navul > li > a:hover{
+    color:var(--accent);
+}
+.navul > li > a:hover > span{
+    color:var(--accent);
+}
+
+.extraNav{
+    background-color: var(--secondary);
+    padding:10px;
+    display:flex;
+    align-items: center;
+}
+.extraNav > p{
+    flex:1;
+    padding:0 10px;
+}
+.extraNav > input{
+    padding:10px 10px;
+    width:250px;
+    border-radius:2px;
+    border:1px solid var(--secondary);
+}
+a.btn{
+    padding:10px 20px;
+    background-color: var(--accent);
+    color:var(--text-white);
+    border-radius:2px;
+}
+.input-search{
+    position:relative;
+    left:-25px;
+    cursor:pointer;
+}
+.arrow-down{
+    color:var(--text-white);
+    position:relative;
+    top:8px;
+}
+
+.level1{
+    position:relative;
+    z-index: 1000;
+    display:none;
+}
+.level1 > li{
+    line-height: 45px;
+    padding-left:20px;
+    border-bottom:1px solid var(--text-white);
+    background-color: var(--primary);
+    width:200px;
+}
+.level1 > li > a{
+    color:var(--text-white);
+}
+.level1 > li:hover{
+    background-color: var(--accent);
+}
+
+.navul > li:hover > .level1{
+    display:block;
+}
